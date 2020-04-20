@@ -195,6 +195,10 @@ nav .nav-links a {
   color: #454a59;
   text-decoration: none;
   font-size: 1.6rem;
+  transition: all 500ms ease-in-out;
+}
+nav .nav-links a:hover {
+  color: rgba(69, 74, 89, 0.5);
 }
 footer {
   color: #22283B;
