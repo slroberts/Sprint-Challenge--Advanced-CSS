@@ -116,4 +116,32 @@
       }
     }
   }
+
+  .subscribe {
+    width: 40rem;
+    margin: 0 auto 5rem;
+    text-align: center;
+    padding: 3rem;
+    background-color: @border-real;
+    .radius();
+
+    @media @mobile {
+      margin-top: 3rem;
+    }
+
+    h3 {
+      .add-space();
+    }
+
+    input {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      font-size: 1.4rem;
+      .add-space();
+    }
+
+    .btn {
+      .button(@font-size: 1.4rem);
+    }
+  }
 } // home
