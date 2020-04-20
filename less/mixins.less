@@ -1,1 +1,43 @@
 // Mixins Here
+.flex(@justify: center, @align: center, @direction: row, @wrap: wrap) {
+  display: flex;
+  justify-content: @justify;
+  align-content: @align;
+  flex-direction: @direction;
+  flex-wrap: @wrap;
+}
+
+.add-space(@val:1rem) {
+  margin-bottom: @val;
+}
+
+.radius(@radius: 0.5rem) {
+  border-radius: @radius;
+}
+
+.button(@width: 100%, @padding: 1rem, @font-size: 1rem) {
+  background-color: @btn-bg-color;
+  color: @porcelain;
+  width: @width;
+  padding: @padding;
+  font-size: @font-size;
+  text-align: center;
+  .radius();
+
+  &:hover {
+    animation: 500ms ease-in forwards fade;
+  }
+
+  @keyframes fade {
+    from {
+      color: @porcelain;
+      background-color: @btn-bg-color;
+    }
+
+    to {
+      color: @ebony-clay;
+      background-color: @wild-sand;
+      border: solid thin @sea-shell;
+    }
+  }
+}

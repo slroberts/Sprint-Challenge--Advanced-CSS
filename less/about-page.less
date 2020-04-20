@@ -1,0 +1,40 @@
+// About Content
+.about {
+  margin-top: 16rem;
+  .flex(@justify: space-between);
+  padding: 28px;
+
+  @media @mobile {
+    .flex(@direction: column);
+  }
+
+  h3 {
+    width: 100%;
+    text-align: center;
+    .add-space(@val: 2rem);
+  }
+
+  p {
+    width: 55%;
+    span {
+      font-size: 2rem;
+    }
+
+    @media @mobile {
+      width: 100%;
+      .add-space(@val: 2rem);
+    }
+  }
+  div {
+    width: 35%;
+    .add-space(@val: 3rem);
+
+    @media @mobile {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
