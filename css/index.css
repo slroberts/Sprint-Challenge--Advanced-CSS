@@ -408,3 +408,50 @@ footer {
     border: solid thin #f1f1f1;
   }
 }
+.about {
+  margin-top: 16rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 28px;
+}
+@media (max-width: 500px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.about h3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about p {
+  width: 55%;
+}
+.about p span {
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .about p {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+.about div {
+  width: 35%;
+  margin-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  .about div {
+    width: 100%;
+  }
+}
+.about div img {
+  width: 100%;
+}
